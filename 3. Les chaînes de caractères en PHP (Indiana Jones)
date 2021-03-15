@@ -1,0 +1,29 @@
+<?php
+
+$msg1 = "0@sn9sirppa@#?ia'jgtvryko1";
+$msg2 = "q8e?wsellecif@#?sel@#?setuotpazdsy0*b9+mw@x1vj";
+$msg3 = "aopi?sgnirts@#?sedhtg+p9l!";
+
+$selectedMsg = $msg1;
+
+$chiffreClé = strlen($selectedMsg) / 2;
+$sousChaine = substr($selectedMsg, 5, $chiffreClé);
+$espace = str_replace('@#?', ' ', $sousChaine);
+$renverser = strrev($espace);
+echo $renverser;
+
+$selectedMsg = $msg2;
+
+$chiffreClé = strlen($selectedMsg) / 2;
+$sousChaine = substr($selectedMsg, 5, $chiffreClé);
+$espace = str_replace('@#?', ' ', $sousChaine);
+$renverser = strrev($espace);
+echo $renverser;
+
+$selectedMsg = $msg3;
+
+$chiffreClé = strlen($selectedMsg) / 2;
+$sousChaine = substr($selectedMsg, 5, $chiffreClé);
+$espace = str_replace('@#?', ' ', $sousChaine);
+$renverser = strrev($espace);
+echo $renverser;
