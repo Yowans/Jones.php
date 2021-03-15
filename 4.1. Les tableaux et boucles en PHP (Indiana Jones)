@@ -1,0 +1,15 @@
+<?php
+
+$film =
+[
+    'Indiana Jones et le temple maudit' =>  1984,
+    'Les aventuriers de l\'Arche perdue' => 1981,
+    'Indiana Jones et la dernière croisade' => 1989,  
+];
+
+asort($film);
+
+foreach ($film as $title => $year) {
+    echo $year," - ",$title.PHP_EOL;
+};
+?>
