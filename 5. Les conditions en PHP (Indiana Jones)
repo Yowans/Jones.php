@@ -1,0 +1,19 @@
+<?php
+
+$weapons = ['point', 'fouet', 'pistolet'];
+$opponentWeapon = $weapons[rand(0,2)]; // Choisi l'arme aléatoirement 
+
+if ($opponentWeapon == $weapons[0])
+{
+    $indiWeapon = $weapons[2];
+}
+elseif($opponentWeapon == $weapons[1])
+{
+    $indiWeapon = $weapons[0];
+}
+elseif($opponentWeapon == $weapons[2])
+{
+   $indiWeapon = $weapons[1];
+}
+
+echo "indi takes a $indiWeapon";
